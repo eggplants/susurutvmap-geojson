@@ -1,0 +1,23 @@
+name: Cron
+
+on:
+  schedule:
+    - cron: 0 16 * * * # at 16PM-UTC, 1AM-JST
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TZ: "Asia/Tokyo"
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git remote set-url origin "https://eggplants:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git checkout master
+          ./_.sh
+          git add .
+          git commit -m "update: $(date +%Y-%m-%d)"
+          git push origin master
