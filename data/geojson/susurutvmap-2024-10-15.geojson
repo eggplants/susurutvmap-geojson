@@ -46765,25 +46765,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -119.4179324,
-          36.778261
-        ]
-      },
-      "properties": {
-        "youtube_id": "biBJ-yPfuqs",
-        "name": "\n釜玉中華そば ナポレオン軒\n",
-        "address": "東京都目黒区中根1-5-1\n",
-        "youtube_url": "https://www.youtube.com/watch?v=biBJ-yPfuqs&list=PLRiGv_zZZiw9dppLgE2QfTcj0uDLYTNEk&index=513&pp=iAQB",
-        "googlemap_url": "https://www.google.com/maps/search/?api=1&query=36.778261%2C-119.4179324",
-        "latitude": "36.778261",
-        "longitude": "-119.4179324"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           139.3634706,
           35.5729579
         ]

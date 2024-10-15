@@ -1,7 +1,7 @@
 {
     "type": "FeatureCollection",
     "features": [
-        .[] | {
+        .[] | select(.latitude + .longitude | contains("-") | not) | {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
